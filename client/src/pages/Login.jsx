@@ -8,23 +8,21 @@ function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="flex w-full max-w-5xl overflow-hidden h-[550px]">
-        
-        {/* Left Image Section */}
-        <div className="hidden md:block w-1/2 relative h-full border-r border-gray-200">
+    <div className="min-h-screen flex items-center justify-center p-4">
+      <div className="flex w-full max-w-6xl overflow-hidden h-[650px]  rounded-lg">
+
+        <div className="hidden md:block w-3/5 relative h-full border-r ">
           <img
             src={isRegister ? image1 : image}
             alt={isRegister ? "Register" : "Login"}
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-8">
-            <h2 className="text-3xl font-bold text-white mb-2">Lorem Ipsum is simply</h2>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-10">
+            <h2 className="text-4xl font-bold text-white mb-3">Lorem Ipsum is simply</h2>
           </div>
         </div>
 
-        {/* Form Section */}
-        <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center md:pl-16">
+        <div className="w-full md:w-2/5 p-8 md:p-12 flex flex-col justify-center md:pl-20">
           <h2 className="text-xl text-center font-semibold mb-4">Welcome to lorem..!</h2>
 
           {/* Toggle Tabs */}
@@ -32,17 +30,15 @@ function Login() {
             <div className="bg-teal-100 rounded-full p-1 flex w-full max-w-xs">
               <button
                 onClick={() => setIsRegister(false)}
-                className={`px-6 py-2 rounded-full text-sm font-medium w-1/2 transition-all ${
-                  !isRegister ? 'bg-teal-500 text-white' : 'text-gray-700'
-                }`}
+                className={`px-6 py-2 rounded-full text-sm font-medium w-1/2 transition-all ${!isRegister ? 'bg-teal-500 text-white' : 'text-gray-700'
+                  }`}
               >
                 Login
               </button>
               <button
                 onClick={() => setIsRegister(true)}
-                className={`px-6 py-2 rounded-full text-sm font-medium w-1/2 transition-all ${
-                  isRegister ? 'bg-teal-500 text-white' : 'text-gray-700'
-                }`}
+                className={`px-6 py-2 rounded-full text-sm font-medium w-1/2 transition-all ${isRegister ? 'bg-teal-500 text-white' : 'text-gray-700'
+                  }`}
               >
                 Register
               </button>
@@ -55,6 +51,7 @@ function Login() {
 
           {/* Form Fields */}
           <form className="space-y-5">
+
             {isRegister && (
               <div>
                 <label className="block text-gray-600 text-sm mb-2">Email</label>
@@ -95,8 +92,8 @@ function Login() {
 
             {isRegister && (
               <div>
-                
-              
+
+
               </div>
             )}
 
