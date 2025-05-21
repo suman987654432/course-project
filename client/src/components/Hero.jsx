@@ -1,6 +1,6 @@
 import React from "react";
 import Assisted from "./Assisted";
-import Congratulation from "./congratulation";
+import Congratulation from "./CongratulationPage";
 import Userexp from "./Userexp";
 import girl from "../assets/girl.png";
 import video from "../assets/video.png";
@@ -32,7 +32,7 @@ const Hero = () => {
                 <div className="relative w-[85%] sm:w-[70%] md:w-[40%]">
                     <img src={girl} alt="hero-girl" className="w-full z-6 relative " />
                     <div className="absolute top-[18%] left-[-15%] md:left-[-20%] z-20 hover:translate-y-[-5px] transition-transform duration-300 cursor-pointer hidden sm:block">
-                        <Assisted />
+                        <Assisted/>
                     </div>
 
                     <div className="absolute top-[30%] right-[-10%] sm:top-[10%] sm:right-auto sm:left-[-20%] md:top-[65%] md:left-[-25%] z-20 hover:translate-y-[-5px] transition-transform duration-300 cursor-pointer">

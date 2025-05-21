@@ -1,6 +1,6 @@
 import email from '../assets/email.png'; 
 
-const Congratulation = () => {
+const CongratulationPage = () => {
   return (
     <div className="flex flex-col md:flex-row items-start md:items-center justify-between bg-[#FFFFFFCC] p-4 rounded-2xl w-[300px] shadow-md">
       <div className="flex items-center gap-4">
@@ -20,4 +20,4 @@ const Congratulation = () => {
   );
 };
 
-export default Congratulation;
+export default CongratulationPage;
