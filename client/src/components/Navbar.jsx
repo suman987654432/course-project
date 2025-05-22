@@ -17,12 +17,37 @@ const Navbar = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+   
+    const logogo = () => {
+  
+        if (window.location.pathname === '/') {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } 
+       
+        else {
+            navigate("/");
+            setTimeout(() => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }, 100);
+        }
+    };
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-[#3EC3C1]  py-4 px-4 md:px-8 text-white ">
 
             <div className="flex items-center">
-                <img src={logo} alt="Logo" className="h-11 w-auto" />
+                <img 
+                    src={logo} 
+                    alt="Logo" 
+                    className="h-11 w-auto cursor-pointer hover:opacity-90 transition-opacity" 
+                    onClick={logogo} 
+                />
             </div>
 
             <button
