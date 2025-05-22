@@ -14,7 +14,8 @@ const Features = () => {
                 This very extraordinary feature, can make learning activities more efficient
             </p>
 
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-10 mt-10 w-full max-w-6xl relative">
+           <div className="flex flex-col lg:flex-row items-center justify-center gap-24 mt-10 w-full max-w-6xl relative">
+
                 <div className="relative w-full md:w-[90%] lg:w-[55%] mx-auto">
                     {/* Decorative circles - made responsive */}
                     <div className="absolute -top-5 sm:-top-8 left-3 sm:left-7 w-16 h-16 sm:w-24 sm:h-24 bg-[#00E091] rounded-full opacity-70 z-0" />

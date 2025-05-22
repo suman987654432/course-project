@@ -8,7 +8,7 @@ import group from "../assets/Group 9.png"
 
 const Hero = () => {
     return (
-        <div className="relative w-full bg-[#3EC3C1] h-screen md:h-[92vh] overflow-hidden">
+        <div className="relative w-full bg-[#3EC3C1] h-screen md:h-[100vh] overflow-hidden">
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-8 lg:px-11 py-8 md:py-12 lg:py-16">
                 <div className="text-white max-w-xl mb-8 md:mb-0 z-10 space-y-6 md:space-y-8">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
