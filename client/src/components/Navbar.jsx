@@ -39,7 +39,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-[#3EC3C1] py-3 px-4 md:px-8 text-white w-full">
+        <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between  py-3 px-4 md:px-8 text-white w-full">
 
             <div className="flex items-center">
                 <img 
