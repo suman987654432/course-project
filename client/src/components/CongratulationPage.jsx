@@ -2,7 +2,7 @@ import email from '../assets/email.png';
 
 const CongratulationPage = () => {
   return (
-    <div className="flex flex-col md:flex-row items-start md:items-center justify-between bg-[#FFFFFFCC] p-4 rounded-2xl w-[300px] shadow-md">
+    <div className="flex flex-col md:flex-row items-start md:items-center justify-between bg-[#FFFFFFCC] p-4 rounded-2xl w-[300px] max-w-full shadow-md">
       <div className="flex items-center gap-4">
         <div className="relative">
           <div className="w-12 h-12 rounded-full bg-[#F88C3D] flex items-center justify-center">

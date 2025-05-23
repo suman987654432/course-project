@@ -5,9 +5,20 @@
 @layer base {
   html {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
   }
   
   body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+}
+
+/* Responsive utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }

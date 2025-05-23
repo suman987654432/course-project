@@ -1,4 +1,4 @@
-import feature2 from "../assets/feature2.png";
+import feature2 from "../../assets/feature2.png";
 
 const Feature1 = () => {
   return (

@@ -1,8 +1,12 @@
-import feature1 from '../assets/feature1.png';
-import icon1 from '../assets/icon1.png';
-import icon2 from '../assets/icon2.png';
-import icon3 from "../assets/users 2.png";
+import feature1 from '../../assets/feature1.png';
+import icon1 from '../../assets/icon1.png';
+import icon2 from '../../assets/icon2.png';
+import icon3 from "../../assets/users 2.png";
 import Feature1 from './Feature1';
+import AssesmentFeature from './AssesmentFeature';
+import Management from './Management';
+import One from './OneFeature';
+import Button from './Button';
 
 const Features = () => {
     return (
@@ -15,11 +19,10 @@ const Features = () => {
             </p>
            <div className="flex flex-col lg:flex-row items-center justify-center gap-24 mt-10 w-full max-w-6xl relative">
                 <div className="relative w-full md:w-[90%] lg:w-[55%] mx-auto">
-                    {/* Decorative circles - made responsive */}
+                 
                     <div className="absolute -top-5 sm:-top-8 left-3 sm:left-7 w-16 h-16 sm:w-24 sm:h-24 bg-[#00E091] rounded-full opacity-70 z-0" />
                     <div className="absolute -bottom-3 sm:-bottom-6 -right-3 sm:-right-6 w-20 h-20 sm:w-28 sm:h-28 bg-[#3C4BD8] rounded-full opacity-70 z-0" />
 
-                    {/* Responsive image container */}
                     <div className="overflow-hidden rounded-xl relative z-10 shadow-lg">
                         <div className="aspect-w-16 aspect-h-9">
                             <img
@@ -70,6 +73,10 @@ const Features = () => {
                 </div>
             </div>
             <Feature1/>
+            <AssesmentFeature/>
+            <Management/>
+            <One/>
+            <Button/>
         </div>
         
     );
