@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Login from "./pages/Login"
 import './index.css' 
 import LandingPage from "./pages/LandingPage"
-import BlogPage from "../src/pages/BlogPage"
+import BlogPage from "./pages/BlogPage"
 
 const App = () => {
   return (
