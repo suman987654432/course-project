@@ -1,4 +1,4 @@
-import React from 'react';
+
 import laptop from '../../assets/laptop.png'; 
 
 const Blog1 = () => {
