@@ -16,9 +16,7 @@ const testimonialData = [
 const Testimonals = () => {
     const [index, setIndex] = useState(0);
 
-    const handleNext = () => {
-        setIndex((prev) => (prev + 1) % testimonialData.length);
-    };
+
 
     const { name, text, stars, reviews, image } = testimonialData[index];
 

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
+import { FaUserCircle } from "react-icons/fa";
 
-
-const Navbar = () => {
+const CommonNavbar = () => {
     const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -52,7 +52,7 @@ const Navbar = () => {
             </div>
 
             <button
-                className="md:hidden text-white focus:outline-none"
+                className="md:hidden text-black focus:outline-none"
                 onClick={toggleMenu}
             >
                 <svg
@@ -70,26 +70,26 @@ const Navbar = () => {
                 </svg>
             </button>
 
-            {/* Desktop Navigation */}
-            <ul className="hidden md:flex gap-4 lg:gap-8 text-lg">
-                <li className="hover:text-gray-200 transition-colors duration-300 cursor-pointer">
+        
+            <ul className="hidden md:flex gap-4 lg:gap-8 text-lg text-white">
+                <li className=" cursor-pointer">
                     <Link to="/" className="block">Home</Link>
                 </li>
-                <li className="hover:text-gray-200 transition-colors duration-300 cursor-pointer">
+                <li className=" cursor-pointer">
                     <Link to="/courses" className="block">Courses</Link>
                 </li>
-                <li className="hover:text-gray-200 transition-colors duration-300 cursor-pointer">
+                <li className=" cursor-pointer">
                     <Link to="/careers" className="block">Careers</Link>
                 </li>
-                <li className="hover:text-gray-200 transition-colors duration-300 cursor-pointer">
+                <li className=" cursor-pointer">
                     <Link to="/blog" className="block">Blog</Link>
                 </li>
-                <li className="hover:text-gray-200 transition-colors duration-300 cursor-pointer">
+                <li className=" cursor-pointer">
                     <Link to="/about" className="block">About Us</Link>
                 </li>
             </ul>
 
-            <div className="hidden md:flex gap-4">
+            <div className="hidden md:flex gap-4 items-center">
                 <Link 
                     to="/login"
                     className="bg-white text-[#3ccbc6] rounded-full px-6 py-1 font-semibold shadow hover:bg-gray-100 transition-colors duration-300 text-center"
@@ -98,13 +98,14 @@ const Navbar = () => {
                 </Link>
                 <Link
                     to="/login"
-                    className="bg-[#65d3ce] text-white rounded-full px-6 py-1 font-semibold shadow hover:bg-[#5bc2bd] transition-colors duration-300 text-center"
+                    className="bg-[#65d3ce] text-white rounded-full px-6 py-1 font-semibold shadow hover:bg-[#5bc2bd] transition-colors duration-300 flex items-center justify-center gap-1"
                 >
-                    Sign Up
+                    Sign Up 
                 </Link>
+                <FaUserCircle className="text-[#3ccbc6] text-3xl ml-2 cursor-pointer hover:text-[#5bc2bd] transition-colors duration-300" />
             </div>
 
-            
+       
             {isMenuOpen && (
                 <div className="absolute top-full left-0 right-0 bg-[#3ccbc6] md:hidden shadow-lg z-50 py-4 px-4 transition-all duration-300 ease-in-out">
                     <ul className="flex flex-col gap-4 mb-4">
@@ -123,6 +124,11 @@ const Navbar = () => {
                         <li className="hover:text-gray-200 transition-colors duration-300 cursor-pointer">
                             <Link to="/about" className="block">About Us</Link>
                         </li>
+                        <li className="hover:text-gray-200 transition-colors duration-300 cursor-pointer">
+                            <Link to="/" className="flex items-center gap-2">
+                                <FaUserCircle /> Profile
+                            </Link>
+                        </li>
                     </ul>
                     <div className="flex flex-col gap-2">
                         <Link 
@@ -133,9 +139,9 @@ const Navbar = () => {
                         </Link>
                         <Link
                             to="/login"
-                            className="bg-[#65d3ce] text-white rounded-full px-6 py-2 font-semibold shadow hover:bg-[#5bc2bd] transition-colors duration-300 text-center"
+                            className="bg-[#65d3ce] text-white rounded-full px-6 py-2 font-semibold shadow hover:bg-[#5bc2bd] transition-colors duration-300 flex items-center justify-center gap-1"
                         >
-                            Sign Up
+                            Sign Up 
                         </Link>
                     </div>
                 </div>
@@ -144,4 +150,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default CommonNavbar;
