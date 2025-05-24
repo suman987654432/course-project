@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Login from "./pages/Login"
 import './index.css' 
 import LandingPage from "./pages/LandingPage"
-import BlogPage from "./pages/BlogPage"
+import BlogPage from "../src/pages/BlogPage"
 
 const App = () => {
   return (
@@ -11,8 +11,7 @@ const App = () => {
    <Routes>
      <Route path="/" element={<LandingPage />} /> 
      <Route path="/login" element={<Login />} />
-      <Route path="/blog" element={<BlogPage />} />
-
+      <Route path="/blogspage" element={<BlogPage />} />
    </Routes>
    </BrowserRouter>
    </>

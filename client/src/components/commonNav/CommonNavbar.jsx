@@ -82,7 +82,7 @@ const CommonNavbar = () => {
                     <Link to="/careers" className="block">Careers</Link>
                 </li>
                 <li className=" cursor-pointer">
-                    <Link to="/blog" className="block">Blog</Link>
+                    <Link to="/blogspage" className="block">Blog</Link>
                 </li>
                 <li className=" cursor-pointer">
                     <Link to="/about" className="block">About Us</Link>
@@ -119,7 +119,7 @@ const CommonNavbar = () => {
                             <Link to="/careers" className="block">Careers</Link>
                         </li>
                         <li className="hover:text-gray-200 transition-colors duration-300 cursor-pointer">
-                            <Link to="/blog" className="block">Blog</Link>
+                            <Link to="/blogspage" className="block">Blog</Link>
                         </li>
                         <li className="hover:text-gray-200 transition-colors duration-300 cursor-pointer">
                             <Link to="/about" className="block">About Us</Link>
