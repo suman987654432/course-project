@@ -19,13 +19,13 @@ const BlogArticle = () => {
       author: "Lina",
       authorImage: authorImg,
       originalPrice: 100,
-      discountedPrice: 80
+      discountedPrice: 90
     },
     {
       id: 2,
       image: article1,
       category: "Design",
-      duration: "3 Month",
+      duration: "4 Month",
       title: "AWS Certified solutions Architect",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
       author: "Lina",
@@ -37,13 +37,13 @@ const BlogArticle = () => {
       id: 3,
       image: article4,
       category: "Design",
-      duration: "3 Month",
+      duration: "5 Month",
       title: "AWS Certified solutions Architect",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
       author: "Lina",
       authorImage: authorImg,
       originalPrice: 100,
-      discountedPrice: 80
+      discountedPrice: 90
     },
     {
       id: 4,
