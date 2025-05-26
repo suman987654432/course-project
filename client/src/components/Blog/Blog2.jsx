@@ -10,7 +10,7 @@ const Blog2 = () => {
       <h2 className="text-3xl font-bold mb-8 text-gray-800">Reading blog list</h2>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {/* UX/UI Card */}
+     
         <div className="relative rounded-lg overflow-hidden shadow-md group cursor-pointer">
           <div className="h-64 w-full overflow-hidden">
             <img 

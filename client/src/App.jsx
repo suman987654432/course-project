@@ -4,6 +4,7 @@ import './index.css'
 import LandingPage from "./pages/LandingPage"
 import BlogPage from "./pages/BlogPage"  
 import CoursePage from "./pages/CoursePage"
+import CourseDetailPage from "./pages/CourseDetailPage"
 const App = () => {
   return (
    <>
@@ -13,6 +14,7 @@ const App = () => {
      <Route path="/login" element={<Login />} />
      <Route path="/blogspage" element={<BlogPage />} />
      <Route path="/courses" element={<CoursePage />} />
+     <Route path="/course-detail/:title" element={<CourseDetailPage />} />
    </Routes>
    </BrowserRouter>
    </>

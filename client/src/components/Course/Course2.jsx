@@ -1,4 +1,6 @@
-import React from 'react';
+import CourseDetailPage from '../../pages/CourseDetailPage';
+import { Link } from 'react-router-dom';
+
 import { FaBriefcase, FaCode, FaDatabase, FaCamera, FaBookOpen, FaFilm, FaPencilRuler, FaBullhorn } from 'react-icons/fa';
 
 const courses = [
@@ -13,10 +15,11 @@ const courses = [
 ];
 
 const Course2 = () => {
+  
   return (
     <section className="py-16 px-4 md:px-8 lg:px-12 mt-10">
       <div className="max-w-6xl mx-auto">
-        <div className=" mb-12">
+        <div className="mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-3">
             Choose your favorite course from top categories
           </h2>
@@ -27,7 +30,7 @@ const Course2 = () => {
           {courses.map((course, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 p-6 flex flex-col items-center text-center h-full  transform hover:-translate-y-1 hover:border-gray-200 transition-all"
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100 p-6 flex flex-col items-center text-center h-full transform hover:-translate-y-1 hover:border-gray-200 transition-all"
             >
               <div className={`w-12 h-12 flex items-center justify-center mb-4 ${course.bg}`}> 
                 {course.icon}
@@ -37,7 +40,12 @@ const Course2 = () => {
                 Explore our comprehensive {course.title.toLowerCase()} courses and learn from industry experts with hands-on projects and real-world examples.
               </p>
               <div className="mt-4 pt-4 border-t border-gray-100 w-full">
-                <span className="text-sm font-medium text-blue-600 hover:text-blue-800 cursor-pointer">View courses →</span>
+                <Link 
+                  to={`/course-detail/${course.title.toLowerCase()}`} 
+                  className="text-sm font-medium text-blue-600 hover:text-blue-800 cursor-pointer inline-block"
+                >
+                  View courses →
+                </Link>
               </div>
             </div>
           ))}
