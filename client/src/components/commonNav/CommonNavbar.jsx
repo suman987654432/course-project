@@ -79,7 +79,7 @@ const CommonNavbar = () => {
                     <Link to="/courses" className="block">Courses</Link>
                 </li>
                 <li className=" cursor-pointer">
-                    <Link to="/careers" className="block">Careers</Link>
+                    <Link to="" className="block">Careers</Link>
                 </li>
                 <li className=" cursor-pointer">
                     <Link to="/blogspage" className="block">Blog</Link>
@@ -102,7 +102,7 @@ const CommonNavbar = () => {
                 >
                     Sign Up 
                 </Link>
-                <FaUserCircle className="text-[#3ccbc6] text-3xl ml-2 cursor-pointer hover:text-[#5bc2bd] transition-colors duration-300" />
+                <FaUserCircle className=" text-3xl ml-2 cursor-pointer " />
             </div>
 
        
@@ -116,7 +116,7 @@ const CommonNavbar = () => {
                             <Link to="/courses" className="block">Courses</Link>
                         </li>
                         <li className="hover:text-gray-200 transition-colors duration-300 cursor-pointer">
-                            <Link to="/careers" className="block">Careers</Link>
+                            <Link to="" className="block">Careers</Link>
                         </li>
                         <li className="hover:text-gray-200 transition-colors duration-300 cursor-pointer">
                             <Link to="/blogspage" className="block">Blog</Link>
