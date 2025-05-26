@@ -1,7 +1,14 @@
 import React from "react";
 import image from "../../assets/detailpage.png";
+import { useNavigate } from "react-router-dom";
 
 const CourseCard = () => {
+  const navigate = useNavigate();
+
+  const handleBuyNow = () => {
+    navigate("/membership");
+  };
+
   return (
     <div className="w-[300px] rounded-lg border-[15px] border-white  overflow-hidden">
       <img
@@ -22,7 +29,10 @@ const CourseCard = () => {
       </div>
 
       <div className="px-4 pb-4">
-        <button className="w-full bg-[#49BBBD] text-white font-semibold py-2 rounded-md">
+        <button
+          className="w-full bg-[#49BBBD] text-white font-semibold py-2 rounded-md"
+          onClick={handleBuyNow}
+        >
           Buy Now
         </button>
       </div>
