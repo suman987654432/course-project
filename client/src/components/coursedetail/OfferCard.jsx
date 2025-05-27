@@ -2,7 +2,7 @@ import React from 'react';
 import blogImage from '../../assets/Group 22.png';
 
 const OfferCard = ({ discount = '50%', badgeColor = 'bg-red-600', title = 'FOR INSTRUCTORS', description, image, imageUrl }) => {
-  // Use imageUrl prop if provided, otherwise use the default image
+
   const cardImage = imageUrl || blogImage;
   
   return (

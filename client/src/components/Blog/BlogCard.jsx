@@ -31,7 +31,7 @@ const BlogCard = () => {
       </p>
 
       <div className="flex items-center justify-between mt-4">
-        <a href="#" className="text-[#3b82f6] hover:underline text-sm font-medium">
+        <a href="/blogdetail" className="text-[#3b82f6] hover:underline text-sm font-medium">
           Read more
         </a>
         <div className="flex items-center gap-1 text-gray-500">

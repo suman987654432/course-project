@@ -17,7 +17,7 @@ const DetailHero = () => {
           />
         </div>
         
-        {/* Course info section with price card */}
+      
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10">
           <div className="flex flex-col lg:flex-row justify-between">
             <div className="lg:w-2/3">

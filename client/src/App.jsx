@@ -7,6 +7,7 @@ import CoursePage from "./pages/CoursePage"
 import CourseDetailPage from "./pages/CourseDetailPage"
 import MembershipPage from "./pages/MembershipPage"
 import CheckOutPage from "./pages/CheckOutPage"
+import BlogDetailPage from "./pages/BlogDetailPage"
 const App = () => {
   return (
    <>
@@ -19,6 +20,7 @@ const App = () => {
      <Route path="/course-detail/:title" element={<CourseDetailPage />} />
      <Route path="/membership" element={<MembershipPage />} />
      <Route path="/checkout" element={<CheckOutPage />} />
+     <Route path="/blogdetail" element={<BlogDetailPage />} />
      
    </Routes>
    </BrowserRouter>
