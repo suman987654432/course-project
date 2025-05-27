@@ -44,8 +44,7 @@ const Students = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slidesPerView, setSlidesPerView] = useState(4);
   const sliderRef = useRef(null);
-  
-  // Adjust slides shown based on screen width
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
@@ -59,7 +58,7 @@ const Students = () => {
       }
     };
 
-    handleResize(); // Initial call
+    handleResize(); 
     window.addEventListener('resize', handleResize);
     
     return () => {
@@ -85,7 +84,7 @@ const Students = () => {
         </h2>
         
         <div className="relative px-4 md:px-0">
-          {/* Carousel container */}
+    
           <div className="overflow-hidden">
             <div 
               ref={sliderRef}
@@ -114,7 +113,7 @@ const Students = () => {
             </div>
           </div>
           
-          {/* Navigation Buttons */}
+
           <button 
             onClick={handlePrev}
             disabled={currentIndex === 0}

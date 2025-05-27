@@ -6,6 +6,7 @@ import BlogPage from "./pages/BlogPage"
 import CoursePage from "./pages/CoursePage"
 import CourseDetailPage from "./pages/CourseDetailPage"
 import MembershipPage from "./pages/MembershipPage"
+import CheckOutPage from "./pages/CheckOutPage"
 const App = () => {
   return (
    <>
@@ -17,6 +18,7 @@ const App = () => {
      <Route path="/courses" element={<CoursePage />} />
      <Route path="/course-detail/:title" element={<CourseDetailPage />} />
      <Route path="/membership" element={<MembershipPage />} />
+     <Route path="/checkout" element={<CheckOutPage />} />
      
    </Routes>
    </BrowserRouter>
