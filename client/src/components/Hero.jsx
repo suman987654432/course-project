@@ -47,7 +47,6 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Bottom Curved SVG */}
             <svg
                 className="absolute bottom-0 left-0 w-full"
                 viewBox="0 0 1440 320"

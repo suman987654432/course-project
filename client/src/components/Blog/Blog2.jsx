@@ -26,7 +26,6 @@ const Blog2 = () => {
           </div>
         </div>
         
-        {/* React Card */}
         <div className="relative rounded-lg overflow-hidden shadow-md group cursor-pointer">
           <div className="h-64 w-full overflow-hidden">
             <img 
@@ -42,7 +41,6 @@ const Blog2 = () => {
           </div>
         </div>
         
-        {/* PHP Card */}
         <div className="relative rounded-lg overflow-hidden shadow-md group cursor-pointer">
           <div className="h-64 w-full overflow-hidden">
             <img 
@@ -58,7 +56,6 @@ const Blog2 = () => {
           </div>
         </div>
         
-        {/* JavaScript Card */}
         <div className="relative rounded-lg overflow-hidden shadow-md group cursor-pointer">
           <div className="h-64 w-full overflow-hidden">
             <img 

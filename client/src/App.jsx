@@ -8,6 +8,7 @@ import CourseDetailPage from "./pages/CourseDetailPage"
 import MembershipPage from "./pages/MembershipPage"
 import CheckOutPage from "./pages/CheckOutPage"
 import BlogDetailPage from "./pages/BlogDetailPage"
+import CareersPage from "./pages/CareersPage"
 const App = () => {
   return (
    <>
@@ -21,6 +22,7 @@ const App = () => {
      <Route path="/membership" element={<MembershipPage />} />
      <Route path="/checkout" element={<CheckOutPage />} />
      <Route path="/blogdetail" element={<BlogDetailPage />} />
+     <Route path="/careers" element={<CareersPage />} />
      
    </Routes>
    </BrowserRouter>

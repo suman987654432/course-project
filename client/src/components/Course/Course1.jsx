@@ -157,7 +157,6 @@ const Course1 = () => {
         </div>
       </div>
 
-      {/* Mobile view with pagination */}
       <div className="md:hidden max-w-xl mx-auto space-y-8">
         {mobileCourses.map((course) => (
           <CourseCard key={course.id} course={course} />

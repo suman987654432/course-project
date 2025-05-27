@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { FaThLarge, FaRegClock, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import article2 from "../../assets/article2.png";

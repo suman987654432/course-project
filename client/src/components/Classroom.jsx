@@ -3,7 +3,7 @@ import video from "../assets/video.png";
 const Classroom = () => {
     return (
         <div className="flex flex-col lg:flex-row text-white p-6 md:p-10 rounded-3xl overflow-hidden   mx-auto max-w-7xl my-12">
-            {/* Left Section */}
+           
             <div className="lg:w-1/2 flex flex-col justify-center gap-6 lg:pr-10">
                 <div className="relative">
                     <div className="w-10 h-10 bg-green-400 rounded-full absolute -top-2 -left-4 animate-pulse"></div>
@@ -33,7 +33,7 @@ const Classroom = () => {
                 </a>
             </div>
 
-            {/* Right Section */}
+            
             <div className="lg:w-1/2 relative mt-8 lg:mt-0 transition-all duration-300 flex justify-center items-center">
 
                 <div className="absolute top-0 left-0 w-16 h-16 border-t-4 border-l-4 border-[#00B5E2] rounded-tl-3xl -translate-x-4 -translate-y-4 z-0"></div>
