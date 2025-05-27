@@ -1,4 +1,4 @@
-// Resourse.jsx
+
 import React from 'react';
 import Cards from './Cards';
 import laptop from '../../assets/laptop.png';
