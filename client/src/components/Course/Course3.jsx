@@ -69,8 +69,7 @@ const Course3 = () => {
     
     // Set initial state
     handleResize();
-    
-    // Add event listener
+ 
     window.addEventListener('resize', handleResize);
     
     // Clean up
