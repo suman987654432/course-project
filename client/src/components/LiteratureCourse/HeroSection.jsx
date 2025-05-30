@@ -24,7 +24,7 @@ const SocialIcon = ({ href, icon: Icon }) => (
 const HeroSection = () => {
   return (
    <div
-  className="max-w-8xl mx-auto py-10 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8"
+  className="max-w-8xl mx-auto py-10 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 mt-20"
   style={{
     backgroundImage: `url(${literaturebg})`,
     backgroundSize: "90% 70%",
