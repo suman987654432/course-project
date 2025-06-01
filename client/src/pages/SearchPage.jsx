@@ -12,14 +12,16 @@ const SearchPage = () => {
   return (
     <>
     <CommonNavbar />
-    <SearchHolder/>
-    <Course6 />
-    <Course6 />
-    <Learning/>
-    <Course3/>
-    <Creators/>
-    <Testimonal/>
-    <Offers/>
+    <div className="w-full max-w-[1920px] mx-auto overflow-x-hidden px-4 md:px-6 lg:px-8">
+      <SearchHolder/>
+      <Course6 />
+      <Course6 />
+      <Learning/>
+      <Course3/>
+      <Creators/>
+      <Testimonal/>
+      <Offers/>
+    </div>
     <Footer/>
     </>
   

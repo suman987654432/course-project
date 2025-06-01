@@ -4,6 +4,7 @@ import Userexp from "./Userexp";
 import girl from "../assets/girl.png";
 import video from "../assets/video.png";
 import group from "../assets/Group 9.png"
+
 const Hero = () => {
     return (
         <div className="relative w-full bg-[#3EC3C1] h-screen md:h-[100vh] overflow-hidden pt-16 md:pt-0">
@@ -30,14 +31,14 @@ const Hero = () => {
 
                 <div className="relative w-[85%] sm:w-[70%] md:w-[40%]">
                     <img src={girl} alt="hero-girl" className="w-full z-6 relative " />
-                    <div className="absolute top-[18%] left-[-15%] md:left-[-20%] z-20 hover:translate-y-[-5px] transition-transform duration-300 cursor-pointer hidden md:block">
+                    <div className="absolute top-[15%] right-[-17%] sm:right-[-5%] md:left-[-20%] z-20 hover:translate-y-[-5px] transition-transform duration-300 cursor-pointer scale-[0.7] sm:scale-[0.85] md:scale-100">
                         <Assisted/>
                     </div>
                     <div className="absolute top-[18%] left-[-15%] md:left-[-20%] z-20 hover:translate-y-[-5px] transition-transform duration-300 cursor-pointer hidden md:block ml-[450px]">
                        <img src={group} alt="" />
                     </div>
 
-                    <div className="absolute top-[30%] right-[-10%] sm:top-[10%] sm:right-auto sm:left-[-20%] md:top-[65%] md:left-[-25%] z-20 hover:translate-y-[-5px] transition-transform duration-300 cursor-pointer hidden md:block">
+                    <div className="absolute bottom-[10%] right-[-5%] sm:right-[-10%] md:top-[65%] md:left-[-25%] z-20 hover:translate-y-[-5px] transition-transform duration-300 cursor-pointer scale-[0.7] sm:scale-[0.85] md:scale-100">
                         <Userexp />
                     </div>
 

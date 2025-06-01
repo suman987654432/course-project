@@ -11,10 +11,12 @@ const BlogPage = () => {
   return (
    <>
    <CommonNavbar />
-   <  Blog1/>
-   <Blog2/>
-   <Blogs />
-   <BlogArticle />
+   <div className="w-full max-w-[1920px] mx-auto overflow-x-hidden px-4 md:px-6 lg:px-8">
+     <Blog1/>
+     <Blog2/>
+     <Blogs />
+     <BlogArticle />
+   </div>
    <Footer/>
    </>
   )

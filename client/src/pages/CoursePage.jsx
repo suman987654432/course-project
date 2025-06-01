@@ -7,18 +7,21 @@ import Course5 from '../components/Course/Course5'
 import Course6 from '../components/Course/Course6'
 import Course7 from '../components/Course/Course7'
 import Footer from '../components/Footer'
+
 const CoursePage = () => {
   return (
    <>
-<CommonNavbar />
-<Course1 />
-<Course2 />
-<Course3 />
-<Course4 />
-<Course5 />
-<Course6 />
-<Course7 />
-<Footer/>
+    <CommonNavbar />
+    <div className="w-full max-w-[1920px] mx-auto overflow-x-hidden px-4 md:px-6 lg:px-8">
+      <Course1 />
+      <Course2 />
+      <Course3 />
+      <Course4 />
+      <Course5 />
+      <Course6 />
+      <Course7 />
+    </div>
+    <Footer/>
    </>
   )
 }

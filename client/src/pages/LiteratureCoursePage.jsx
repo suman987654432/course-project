@@ -8,9 +8,11 @@ const LiteratureCoursePage = () => {
   return (
     <>
     <CommonNavbar />
-    <HeroSection/>
-    <Button/>
-    <LiteratureCourse/>
+    <div className="w-full max-w-[1920px] mx-auto overflow-x-hidden px-4 md:px-6 lg:px-8">
+      <HeroSection/>
+      <Button/>
+      <LiteratureCourse/>
+    </div>
     <Footer/>
     </>
   )

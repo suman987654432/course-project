@@ -6,8 +6,10 @@ const BlogDetailPage = () => {
   return (
    <>
    <CommonNavbar />
-   <Hero/>
-   <Blogs />
+   <div className="w-full max-w-[1920px] mx-auto overflow-x-hidden">
+     <Hero/>
+     <Blogs />
+   </div>
    <Footer/>
    </>
   )

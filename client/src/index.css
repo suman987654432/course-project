@@ -16,6 +16,12 @@
   }
 }
 
+@layer components {
+  .container-width {
+    @apply w-full max-w-[1920px] mx-auto overflow-x-hidden px-4 md:px-6 lg:px-8;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

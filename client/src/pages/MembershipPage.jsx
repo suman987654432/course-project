@@ -12,12 +12,14 @@ const MembershipPage = () => {
   return (
     <>
       <CommonNavbar />
-      <Pricing />
-      <Course5 />
-      <FAQ />
-      <Students />
-      <Download/>
-      <Laptop/>
+      <div className="w-full max-w-[1920px] mx-auto overflow-x-hidden px-4 md:px-6 lg:px-8">
+        <Pricing />
+        <Course5 />
+        <FAQ />
+        <Students />
+        <Download/>
+        <Laptop/>
+      </div>
       <Footer/>
     </>
   )
