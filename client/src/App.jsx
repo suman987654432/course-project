@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import Login from "./pages/Login"
 import './index.css' 
 import LandingPage from "./pages/LandingPage"
@@ -14,7 +14,6 @@ import LiteratureCoursePage from "./pages/LiteratureCoursePage"
 const App = () => {
   return (
    <>
-   <BrowserRouter>
    <Routes>
      <Route path="/" element={<LandingPage />} /> 
      <Route path="/login" element={<Login />} />
@@ -27,11 +26,7 @@ const App = () => {
      <Route path="/careers" element={<CareersPage />} />
      <Route path="/search" element={<SearchPage />} />
      <Route path="/about" element={<LiteratureCoursePage />} />
-
-     
-     
    </Routes>
-   </BrowserRouter>
    </>
   )
 }
