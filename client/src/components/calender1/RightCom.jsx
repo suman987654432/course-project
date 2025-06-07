@@ -19,10 +19,11 @@ const RightCom = () => {
 
           <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
             <div className="w-full md:w-1/2">
+            
               <p className="text-sm text-gray-600 mb-1">Start date / Time</p>
               <input 
                 type="text" 
-                defaultplaceholderValue="September 24, 2017 07:53 am" 
+                placeholder="September 24, 2017 07:53 am" 
                 className="w-full p-3 border border-gray-200 rounded-md bg-gray-50 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all" 
               />
             </div>

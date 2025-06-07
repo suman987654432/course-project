@@ -1,8 +1,8 @@
 import LeftCom from "../components/calender1/LeftCom";
-import RightCom from "../components/calender1/RightCom";
+import RightCom from "../components/calender2/Right";
 import { BsClock } from 'react-icons/bs';
 
-const Calender1Page = () => {
+const Calender2Page = () => {
     return (
         <>
             <div className="flex flex-col sm:flex-row">
@@ -30,4 +30,4 @@ const Calender1Page = () => {
     )
 }
 
-export default Calender1Page;
+export default Calender2Page;

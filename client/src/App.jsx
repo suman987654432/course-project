@@ -12,6 +12,8 @@ import CareersPage from "./pages/CareersPage"
 import SearchPage from "./pages/SearchPage"
 import LiteratureCoursePage from "./pages/LiteratureCoursePage"
 import Calender1Page from "./pages/Calender1Page"
+import Calender2Page from "./pages/Calender2Page"
+import Calender3Page from "./pages/Calender3Page"
 const App = () => {
   return (
    <>
@@ -28,6 +30,8 @@ const App = () => {
      <Route path="/search" element={<SearchPage />} />
      <Route path="/about" element={<LiteratureCoursePage />} />
      <Route path="/calender1" element={<Calender1Page />} />
+     <Route path="/calender2" element={<Calender2Page />} />
+     <Route path="/calender3" element={<Calender3Page />} />
    </Routes>
    </>
   )
